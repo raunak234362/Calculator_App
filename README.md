@@ -15,7 +15,8 @@ This React Calculator App is designed to provide basic arithmetic operations in 
 
 ## Demo
 
-![Calculator App Demo](https://drive.google.com/uc?id=1F9FrhKDEoc2xRIhetSpMT0m7iKwn9mPM)
+![Calculator App Demo]
+<img width="960" alt="Screenshot 2023-12-20 233702" src="https://github.com/raunak234362/Calculator_App/assets/64278503/8f8fb013-204d-4e4d-8f83-4a73a69bed67">
 
 
 ## Getting Started
