@@ -13,10 +13,6 @@ This React Calculator App is designed to provide basic arithmetic operations in 
 - Clear and intuitive user interface.
 - Responsive design for a seamless experience on various devices.
 
-## Demo
-
-[[Calcultor App](https://drive.google.com/file/d/1F9FrhKDEoc2xRIhetSpMT0m7iKwn9mPM/view?usp=sharing)
-
 
 ## Getting Started
 
