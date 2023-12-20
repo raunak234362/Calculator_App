@@ -1,5 +1,3 @@
-Certainly! Below is a simple template for a README file for a React Calculator App. Feel free to customize it based on the specifics of your project:
-
 ```markdown
 # React Calculator App
 
@@ -17,8 +15,8 @@ This React Calculator App is designed to provide basic arithmetic operations in 
 
 ## Demo
 
-![Calculator App Demo](<img width="960" alt="image" src="https://drive.google.com/file/d/1F9FrhKDEoc2xRIhetSpMT0m7iKwn9mPM/view?usp=sharing">
-)
+![Calculator App Demo](https://drive.google.com/uc?id=1F9FrhKDEoc2xRIhetSpMT0m7iKwn9mPM)
+
 
 ## Getting Started
 
