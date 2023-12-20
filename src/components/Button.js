@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { CalcContext } from '../context/CalcContext'
 
-const getStyleName = btn => {
-  
+// Function to determine the CSS class
+const getStyleName = btn => {  
     const className={
         '=':'equals',
         'x':'opt',
@@ -10,11 +10,13 @@ const getStyleName = btn => {
         '-':'opt',
         '+':'opt',
         '0':'zero'
-    }
+    };
     return className[btn]
-}
+};
 
+//Button Component
 const Button = ({value}) => {
+  // Accessing the context
   const {calc,setCalc}=useContext(CalcContext);
 
   //User CLick Comma
@@ -25,11 +27,12 @@ const Button = ({value}) => {
     });
   }
 
+  //Click handler for the reset button
   const resetClick = () => {
     setCalc({ sign: '',num:0,res:0 })
   }
 
-
+  // Click handler for (0-9) buttons
   const handleClickButton = () => {
     const numberString = value.toString()
 
@@ -45,7 +48,7 @@ const Button = ({value}) => {
     })
   }
 
-
+  //Click handler for operators
   const signClick = () => {
     setCalc({
       sign: value,
@@ -54,6 +57,7 @@ const Button = ({value}) => {
     })
   }
 
+  //Click handler for equal button
   const equalsClick = () => {
     if(calc.res && calc.num){
 
@@ -74,6 +78,7 @@ const Button = ({value}) => {
   }
   }
 
+  //click handler for % button
   const persenClick = () => {
     setCalc({
       num:(calc.num / 100),
@@ -82,7 +87,7 @@ const Button = ({value}) => {
     })
   }
 
-
+  //click handler for (+/-) button
   const invertClick = () => {
     setCalc({
       num: calc.num ? calc.num * -1 : 0,
@@ -91,8 +96,9 @@ const Button = ({value}) => {
     })
   }
 
+  // Handle button click event
   const handleBtnClick = () => {
-    
+    //Object with specific function
     const results={
       '.':commaClick,
       'C':resetClick,

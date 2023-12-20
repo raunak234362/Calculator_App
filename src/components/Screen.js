@@ -7,14 +7,14 @@ const Screen = () => {
   const screenRef = useRef();
 
   useEffect(() => {
-    // Adjust font size on component mount and whenever calc changes
+    // Adjust font size on component
     adjustFontSize();
   }, [calc]);
 
   const adjustFontSize = () => {
     const screenElement = screenRef.current;
     if (screenElement) {
-      // Set a base font size (you can adjust this as needed)
+      // Set a base font size
       let fontSize = 4;
 
       // Reset font size before each adjustment
